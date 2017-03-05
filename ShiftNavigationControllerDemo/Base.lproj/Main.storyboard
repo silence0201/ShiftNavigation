@@ -12,7 +12,7 @@
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -74,7 +74,7 @@
         <!--Back-->
         <scene sceneID="Is9-v6-oYB">
             <objects>
-                <viewController id="aQA-ac-ZRR" sceneMemberID="viewController">
+                <viewController id="aQA-ac-ZRR" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HEs-LK-Tag"/>
                         <viewControllerLayoutGuide type="bottom" id="1Oe-MF-0EN"/>
@@ -87,6 +87,9 @@
                                 <rect key="frame" x="164" y="308" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backRoot:" destination="aQA-ac-ZRR" eventType="touchUpInside" id="8UV-vo-QQ0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,6 +111,12 @@
                     <view key="view" contentMode="scaleToFill" id="DaU-n6-8Bs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="24d-r4-x3K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit" id="hEO-qE-Q1W">
@@ -120,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VB5-Fg-F7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="99"/>
+            <point key="canvasLocation" x="2292" y="98.50074962518741"/>
         </scene>
         <!--Shift Navigation Controller-->
         <scene sceneID="d0b-kU-RSn">
@@ -144,5 +153,6 @@
     <resources>
         <image name="1" width="1000" height="1823"/>
         <image name="2" width="1500" height="1999"/>
+        <image name="3" width="611" height="800"/>
     </resources>
 </document>
