@@ -8,6 +8,10 @@ ShiftNavigation:一个简单导航栏跟随View一起移动的切换动画
 ### 导入
 将项目中`ShiftNavigationController`文件夹拖到项目里
 
+或者使用`Pod`安装
+
+	pod 'ShiftNavBar', '~> 0.1.0'
+
 ### 使用
 1. 导入头文件
 
