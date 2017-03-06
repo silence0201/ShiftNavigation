@@ -17,6 +17,10 @@ ShiftNavigation:一个简单导航栏跟随View一起移动的切换动画
 2. 直接使用或者自定义`UINavigationController`继承于`SIShiftNavigationController`
 3. 如果使用`Stroyboard`,将导航栏的class设置为`SIShiftNavigationController `
 
+### 效果
+使用效果如下  
+![screenshot](screenshot.gif)
+
 ## ShiftNavigation
 ShiftNavigation is available under the MIT license. See the LICENSE file for more info.
 
