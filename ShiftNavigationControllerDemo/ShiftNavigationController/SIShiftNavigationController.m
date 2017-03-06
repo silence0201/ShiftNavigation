@@ -2,7 +2,7 @@
 //  SIShiftNavigationController.m
 //  ShiftNavigationControllerDemo
 //
-//  Created by 杨晴贺 on 2017/3/5.
+//  Created by Silence on 2017/3/5.
 //  Copyright © 2017年 Silence. All rights reserved.
 //
 
@@ -11,13 +11,11 @@
 #define RGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-// 默认的将要变透明的遮罩的初始透明度(全黑)
-#define kDefaultAlpha 0.6
-// 当拖动的距离,占了屏幕的总宽高的3/4时, 就让imageview完全显示，遮盖完全消失
-#define kTargetTranslateScale 0.75
-// 最小移动距离 50
-#define kMinPoint 50
+#define kDefaultAlpha 0.6 ///> 默认的将要变透明的遮罩的初始透明度(全黑)
+#define kTargetTranslateScale 0.75 ///> 当拖动的距离,占了屏幕的总宽高的3/4时, 就让imageview完全显示，遮盖完全消失
+#define kMinPoint 50  ///> 最小移动距离 50
 
+#pragma mark -------------------- 转场动画 -----------------------------
 
 @interface ShiftAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
@@ -128,9 +126,6 @@
     }
     return _screenShotArray ;
 }
-- (void)removeLastScreenShot{
-    [self.screenShotArray removeLastObject];
-}
 
 - (void)setNavigationController:(UINavigationController *)navigationController{
     _navigationController = navigationController;
@@ -143,6 +138,7 @@
 }
 
 #pragma mark --- Private Method
+// 截图
 - (UIImage *)screenShot{
     UIViewController *rootVc = self.navigationController.view.window.rootViewController ;
     CGSize size = rootVc.view.frame.size ;
@@ -165,7 +161,7 @@
 
 @end
 
-
+#pragma mark ---------------- 自定义导航控制器 ------------------
 @interface SIShiftNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) UIImageView *screenshotImageView ;
@@ -354,7 +350,7 @@
             [_coverView removeFromSuperview] ;
             
             [self popViewControllerAnimated:NO] ;
-            [self.animation removeLastScreenShot] ;
+            [self.animation.screenShotArray removeLastObject] ;
         }] ;
     }
 }
