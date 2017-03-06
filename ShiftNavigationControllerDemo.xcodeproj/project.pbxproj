@@ -13,7 +13,7 @@
 		E8ABF5B61E6C31A500A193C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ABF5B41E6C31A500A193C5 /* Main.storyboard */; };
 		E8ABF5B81E6C31A500A193C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8ABF5B71E6C31A500A193C5 /* Assets.xcassets */; };
 		E8ABF5BB1E6C31A500A193C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ABF5B91E6C31A500A193C5 /* LaunchScreen.storyboard */; };
-		E8ABF5C51E6C32CF00A193C5 /* SIShiftNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABF5C41E6C32CF00A193C5 /* SIShiftNavigationController.m */; };
+		E8ABF5CF1E6CF37900A193C5 /* SIShiftNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABF5CE1E6CF37900A193C5 /* SIShiftNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		E8ABF5B71E6C31A500A193C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8ABF5BA1E6C31A500A193C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8ABF5BC1E6C31A500A193C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8ABF5C31E6C32CF00A193C5 /* SIShiftNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIShiftNavigationController.h; sourceTree = "<group>"; };
-		E8ABF5C41E6C32CF00A193C5 /* SIShiftNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIShiftNavigationController.m; sourceTree = "<group>"; };
+		E8ABF5CD1E6CF37900A193C5 /* SIShiftNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIShiftNavigationController.h; sourceTree = "<group>"; };
+		E8ABF5CE1E6CF37900A193C5 /* SIShiftNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIShiftNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		E8ABF5AA1E6C31A500A193C5 /* ShiftNavigationControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E8ABF5C21E6C31D400A193C5 /* ShiftNavigationController */,
+				E8ABF5CC1E6CF37900A193C5 /* ShiftNavigationController */,
 				E8ABF5AE1E6C31A500A193C5 /* AppDelegate.h */,
 				E8ABF5AF1E6C31A500A193C5 /* AppDelegate.m */,
 				E8ABF5B11E6C31A500A193C5 /* ViewController.h */,
@@ -83,14 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E8ABF5C21E6C31D400A193C5 /* ShiftNavigationController */ = {
+		E8ABF5CC1E6CF37900A193C5 /* ShiftNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				E8ABF5C31E6C32CF00A193C5 /* SIShiftNavigationController.h */,
-				E8ABF5C41E6C32CF00A193C5 /* SIShiftNavigationController.m */,
+				E8ABF5CD1E6CF37900A193C5 /* SIShiftNavigationController.h */,
+				E8ABF5CE1E6CF37900A193C5 /* SIShiftNavigationController.m */,
 			);
 			path = ShiftNavigationController;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -165,7 +165,7 @@
 			files = (
 				E8ABF5B31E6C31A500A193C5 /* ViewController.m in Sources */,
 				E8ABF5B01E6C31A500A193C5 /* AppDelegate.m in Sources */,
-				E8ABF5C51E6C32CF00A193C5 /* SIShiftNavigationController.m in Sources */,
+				E8ABF5CF1E6CF37900A193C5 /* SIShiftNavigationController.m in Sources */,
 				E8ABF5AD1E6C31A500A193C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
